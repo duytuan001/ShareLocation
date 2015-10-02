@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="HUE_MAGENTA">#F16DF1</color>
+    <color name="HUE_VIOLET">#B777F6</color>
+    <color name="HUE_ORANGE">#F5B576</color>
+    <color name="HUE_RED">#F26F6F</color>
+    <color name="HUE_BLUE">#7171F2</color>
+    <color name="HUE_GREEN">#6EF26E</color>
+    <color name="HUE_AZURE">#6FB0F2</color>
+    <color name="HUE_ROSE">#F371B2</color>
+    <color name="HUE_CYAN">#79F6F6</color>
+    <color name="HUE_YELLOW">#F1F16E</color>
+
+    <color name="BLACK">#000000</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="GRAY">@color/common_action_bar_splitter</color>
+</resources>

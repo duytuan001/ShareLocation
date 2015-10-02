@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/settings_title_large"
+            android:text="@string/sharing" />
+
+        <ToggleButton
+            android:id="@+id/settings_sharing_tb"
+            style="@style/settings_switch" />
+    </LinearLayout>
+
+    <View style="@style/settings_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/settings_title_large"
+            android:text="@string/group" />
+
+        <ImageButton
+            android:id="@+id/settings_group_create_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.example.tuanpd.myapplication.CustomEditText
+            android:id="@+id/settings_group_id_et"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:hint="@string/group_id"
+            android:inputType="number"
+            android:gravity="right"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/settings_group_pw_et"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/settings_group_id_et"
+            android:hint="@string/group_password"
+            android:inputType="number"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/settings_group_joint_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/group_joint"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/settings_group_joint_near_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/settings_group_joint_btn"
+            android:text="@string/group_joint_near"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <View style="@style/settings_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/settings_title_large"
+            android:text="@string/interval_period" />
+
+        <Spinner
+            android:id="@+id/settings_interval_period_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <View style="@style/settings_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/GRAY"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <TextView
+            style="@style/settings_title_large"
+            android:text="@string/member_list" />
+
+        <TextView
+            android:id="@+id/settings_members_indicator_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02/20" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/settings_member_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/settings_empty_member_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/empty_list"
+        android:visibility="gone" />
+
+</LinearLayout>
